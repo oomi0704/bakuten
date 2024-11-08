@@ -1,3 +1,9 @@
+
+### **画面遷移図 Figma**
+https://www.figma.com/design/EwCDzFqidxN7S3WTJaa1lw/%E3%83%90%E3%82%AF%E8%BB%A2?node-id=13-16&t=KYHfKhi21gLvtdnH-1
+
+
+
 ### **サービス概要**
 
 バク転のフォームを解析し、改善案を提供するアプリケーション。ユーザーがバク転の画像を登録すると、フォームを採点し、改善案や練習方法、筋トレ方法を提案するWebアプリです。
