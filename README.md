@@ -2,7 +2,8 @@
 ### **画面遷移図 Figma**
 https://www.figma.com/design/EwCDzFqidxN7S3WTJaa1lw/%E3%83%90%E3%82%AF%E8%BB%A2?node-id=13-16&t=KYHfKhi21gLvtdnH-1
 
-
+### **ER図**
+https://app.diagrams.net/#G1b6PhNTUM-Krmio0lYXdcui8XN--AaFOL#%7B%22pageId%22%3A%22R2lEEEUBdFMjLlhIrx00%22%7D
 
 ### **サービス概要**
 
