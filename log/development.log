@@ -233,3 +233,13 @@ Started GET "/assets/turbo.min-fae85750.js" for 192.168.65.1 at 2024-12-14 19:27
 Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 192.168.65.1 at 2024-12-14 19:28:46 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 11.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
