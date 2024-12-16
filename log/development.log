@@ -243,3 +243,1057 @@ Processing by TopController#index as HTML
 Completed 200 OK in 43ms (Views: 11.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/" for 192.168.65.1 at 2024-12-14 19:47:55 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Bakuten'*/[0m
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | GC: 7.5ms)
+Completed 200 OK in 85ms (Views: 20.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.9ms)
+
+
+Started GET "/" for 192.168.65.1 at 2024-12-14 19:48:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 7.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 192.168.65.1 at 2024-12-14 19:49:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 35ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 192.168.65.1 at 2024-12-14 19:50:03 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.0ms)
+Completed 200 OK in 35ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 192.168.65.1 at 2024-12-14 22:39:33 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_start'
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_to_hosts'
+pg (1.5.9) lib/pg/connection.rb:772:in `new'
+pg (1.5.9) lib/pg.rb:63:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 192.168.65.1 at 2024-12-14 22:43:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_start'
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_to_hosts'
+pg (1.5.9) lib/pg/connection.rb:772:in `new'
+pg (1.5.9) lib/pg.rb:63:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 192.168.65.1 at 2024-12-14 23:06:05 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_start'
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_to_hosts'
+pg (1.5.9) lib/pg/connection.rb:772:in `new'
+pg (1.5.9) lib/pg.rb:63:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 192.168.65.1 at 2024-12-14 23:06:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_start'
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_to_hosts'
+pg (1.5.9) lib/pg/connection.rb:772:in `new'
+pg (1.5.9) lib/pg.rb:63:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 192.168.65.1 at 2024-12-14 23:12:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+Caused by: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+)
+
+Information for: ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:69:in `rescue in new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_start'
+pg (1.5.9) lib/pg/connection.rb:837:in `connect_to_hosts'
+pg (1.5.9) lib/pg/connection.rb:772:in `new'
+pg (1.5.9) lib/pg.rb:63:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 192.168.65.1 at 2024-12-14 23:13:00 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::NoDatabaseError (We could not find your database: rails_bakuten_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+)
+Caused by: PG::ConnectionBad (connection to server at "172.27.0.3", port 5432 failed: FATAL:  database "rails_bakuten_development" does not exist
+)
+
+Information for: ActiveRecord::NoDatabaseError (We could not find your database: rails_bakuten_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+  
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server at "172.27.0.3", port 5432 failed: FATAL:  database "rails_bakuten_development" does not exist
+):
+  
+pg (1.5.9) lib/pg/connection.rb:709:in `async_connect_or_reset'
+pg (1.5.9) lib/pg/connection.rb:844:in `connect_to_hosts'
+pg (1.5.9) lib/pg/connection.rb:772:in `new'
+pg (1.5.9) lib/pg.rb:63:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:934:in `connect'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:946:in `reconnect'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:770:in `block in verify!'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:761:in `verify!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:778:in `connect!'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:984:in `block in with_raw_connection'
+activesupport (8.0.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract_adapter.rb:983:in `with_raw_connection'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:412:in `with_connection'
+activerecord (8.0.0) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.0) lib/active_record/migration.rb:1431:in `initialize'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `new'
+activerecord (8.0.0) lib/active_record/migration.rb:1279:in `open'
+activerecord (8.0.0) lib/active_record/migration.rb:763:in `block (2 levels) in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.0) lib/active_record/migration.rb:762:in `block in pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `each'
+activerecord (8.0.0) lib/active_record/migration.rb:761:in `pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:740:in `check_pending_migrations'
+activerecord (8.0.0) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.0) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.0) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='Bakuten'*/[0m
+  [1m[35m (96.6ms)[0m  [1m[35mCREATE DATABASE "rails_bakuten_development" ENCODING = 'unicode' /*application='Bakuten'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Bakuten'*/[0m
+  [1m[35m (86.4ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode' /*application='Bakuten'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Bakuten'*/[0m
+  [1m[35m (52.2ms)[0m  [1m[35mCREATE DATABASE "rails_bakuten_development" ENCODING = 'unicode' /*application='Bakuten'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Bakuten'*/[0m
+  [1m[35m (89.4ms)[0m  [1m[35mCREATE DATABASE "rails_bakuten_test" ENCODING = 'unicode' /*application='Bakuten'*/[0m
+Started GET "/" for 192.168.65.1 at 2024-12-14 23:15:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (17.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='Bakuten'*/[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Bakuten'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Bakuten'*/[0m
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | GC: 0.0ms)
+Completed 200 OK in 78ms (Views: 15.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 192.168.65.1 at 2024-12-16 19:04:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 13.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 192.168.65.1 at 2024-12-16 21:51:01 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 9.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
